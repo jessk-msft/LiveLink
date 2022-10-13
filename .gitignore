@@ -63,3 +63,7 @@ Extras/
 # CMake specific files
 build/*
 .env
+
+# Generated files
+Source/Programs/MayaUnrealLiveLinkPlugin/MayaUnrealLiveLinkPluginUI.py
+

@@ -25,6 +25,8 @@
 #include "ILiveLinkClient.h"
 #include "MayaLiveLinkMessageBusSource.h"
 #include "SMayaLiveLinkSourceFactory.h"
+#include "Misc/MessageDialog.h"
+#include "Features/IModularFeatures.h"
 
 #define LOCTEXT_NAMESPACE "MayaLiveLinkSourceFactory"
 

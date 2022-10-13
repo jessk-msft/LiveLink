@@ -36,6 +36,7 @@
 #include "UObject/WeakObjectPtr.h"
 #include "UObject/Package.h"
 #include "UObject/ObjectMacros.h"
+#include "MayaLiveLinkUtils.h"
 
 IMPLEMENT_MODULE(FMayaLiveLinkTimelineSyncModule, MayaLiveLinkTimelineSync)
 

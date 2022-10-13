@@ -57,6 +57,7 @@
 #include "Tracks/MovieSceneFloatTrack.h"
 #include "Tracks/MovieSceneCameraCutTrack.h"
 #include "Tracks/MovieSceneVisibilityTrack.h"
+#include "Roles/MayaLiveLinkTimelineTypes.h"
 
 #define LOCTEXT_NAMESPACE "MayaLiveLinkLevelSequenceHelper"
 

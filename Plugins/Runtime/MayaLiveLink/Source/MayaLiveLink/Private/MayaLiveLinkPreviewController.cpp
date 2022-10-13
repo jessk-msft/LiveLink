@@ -27,6 +27,8 @@
 #include "LiveLinkClientReference.h"
 #include "Roles/LiveLinkTransformRole.h"
 #include "Roles/LiveLinkTransformTypes.h"
+#include "MayaLiveLinkTimelineSync.h"
+#include "ILiveLinkClient.h"
 
 const FName EditorCamera(TEXT("EditorActiveCamera"));
 

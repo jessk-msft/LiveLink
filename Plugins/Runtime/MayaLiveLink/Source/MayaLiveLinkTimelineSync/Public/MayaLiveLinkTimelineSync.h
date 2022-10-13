@@ -24,6 +24,7 @@
 
 #include "CoreMinimal.h"
 #include "Modules/ModuleManager.h"
+#include "Misc/QualifiedFrameTime.h"
 
 class FMayaLiveLinkTimelineSyncModule : public IModuleInterface
 {

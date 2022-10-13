@@ -55,9 +55,9 @@ public:
 	UPROPERTY(EditAnywhere, Category="TimelineParams")
 	FFrameRate FrameRate;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="TimelineParams")
-	int32 StartFrame;
+	int32 StartFrame = 0;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="TimelineParams")
-	int32 EndFrame;
+	int32 EndFrame = 0;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="TimelineParams")
 	FString SequenceName;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="TimelineParams")
@@ -182,30 +182,30 @@ struct MAYALIVELINKINTERFACE_API FMayaLiveLinkKeyFrame
 	GENERATED_BODY()
 
 	UPROPERTY(EditAnywhere, Category="KeyFrame")
-	double Value;
+	double Value = 0.0;
 
 	UPROPERTY(EditAnywhere, Category="KeyFrame")
-	TEnumAsByte<ELiveLinkInterpMode> InterpMode;
+	TEnumAsByte<ELiveLinkInterpMode> InterpMode = LLIM_Linear;
 
 	UPROPERTY(EditAnywhere, Category="KeyFrame")
-	TEnumAsByte<ELiveLinkTangentMode> TangentMode;
+	TEnumAsByte<ELiveLinkTangentMode> TangentMode = LLTM_Auto;
 
 	UPROPERTY(EditAnywhere, Category="KeyFrame")
-	TEnumAsByte<ELiveLinkTangentWeightMode> TangentWeightMode;
+	TEnumAsByte<ELiveLinkTangentWeightMode> TangentWeightMode = LLTWM_WeightedNone;
 
 	//MFnAnimCurve::TangentType TangentTypeIn;
 	UPROPERTY(EditAnywhere, Category="KeyFrame")
-	double TangentAngleIn;
+	double TangentAngleIn = 0.0;
 
 	UPROPERTY(EditAnywhere, Category="KeyFrame")
-	double TangentWeightIn;
+	double TangentWeightIn = 0.0;
 
 	//MFnAnimCurve::TangentType TangentTypeOut;
 	UPROPERTY(EditAnywhere, Category="KeyFrame")
-	double TangentAngleOut;
+	double TangentAngleOut = 0.0;
 
 	UPROPERTY(EditAnywhere, Category="KeyFrame")
-	double TangentWeightOut;
+	double TangentWeightOut = 0.0;
 };
 
 USTRUCT(BlueprintType)
@@ -246,7 +246,7 @@ struct MAYALIVELINKINTERFACE_API FMayaLiveLinkAnimSequenceFrameData : public FMa
 	GENERATED_BODY()
 
 	UPROPERTY()
-	int32 StartFrame;
+	int32 StartFrame = 0;
 
 	UPROPERTY()
 	TArray<FMayaLiveLinkAnimSequenceFrame> Frames;

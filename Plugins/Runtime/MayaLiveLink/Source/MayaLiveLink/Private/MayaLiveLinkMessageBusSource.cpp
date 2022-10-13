@@ -48,6 +48,8 @@
 
 #include "MessageEndpointBuilder.h"
 #include "Misc/App.h"
+#include "Animation/AnimSequence.h"
+#include "Editor.h"
 
 
 FMayaLiveLinkMessageBusSource::FMayaLiveLinkMessageBusSource(const FText& InSourceType, const FText& InSourceMachineName, const FMessageAddress& InConnectionAddress, double InMachineTimeOffset)

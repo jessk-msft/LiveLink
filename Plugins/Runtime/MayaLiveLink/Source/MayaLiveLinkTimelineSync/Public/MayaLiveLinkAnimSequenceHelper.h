@@ -39,10 +39,10 @@ class UMayaLiveLinkAnimSequenceHelper : public UObject
 
 private:
 	static bool StaticUpdateAnimSequence(class UAnimSequence& AnimSequence,
-										 USkeleton* Skeleton,
+										 class USkeleton* Skeleton,
 										 float SequenceLength,
 										 int32 NumberOfFrames,
-										 const FFrameRate& FrameRate);
+										 const struct FFrameRate& FrameRate);
 
 	static float ComputeAnimSequenceLength(int32 InNumberOfFrames, double InFrameRate)
 	{

@@ -24,6 +24,7 @@
 
 #include "Modules/ModuleInterface.h"
 #include "Features/IModularFeatures.h"
+#include "Modules/ModuleManager.h"
 
 class FMayaLiveLinkPresenceDetector;	
 
